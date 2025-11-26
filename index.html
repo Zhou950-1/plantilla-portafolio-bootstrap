@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Portafolio - Liu Bai Style</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --bg-light: #ffffff;
+      --text-dark: #111;
+      --text-muted: #666;
+      --border-light: #f1f1f1;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .navbar {
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar-scrolled {
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: var(--text-dark) !important;
+      font-weight: 400;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      position: relative;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .section-space {
+      padding: 100px 0;
+    }
+
+    .divider {
+      height: 1px;
+      background-color: var(--border-light);
+      margin: 80px auto;
+      max-width: 200px;
+    }
+
+    .btn-custom {
+      background-color: transparent;
+      border: 1px solid var(--text-dark);
+      color: var(--text-dark);
+      transition: all 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: var(--text-dark);
+      color: #fff;
+    }
+
+    .card-project {
+      border: 1px solid var(--border-light);
+      border-radius: 4px;
+      overflow: hidden;
+      background-color: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .card-project:hover {
+      transform: translateY(-4px);
+    }
+
+    .card-project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .form-control,
+    .form-control:focus {
+      border-radius: 0;
+      border: 1px solid var(--border-light);
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+
+<!-- Navbar -->
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-light" href="#">Liu Bai Portafolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="hero" class="hero">
+  <div class="hero-overlay">
+    <div>
+      <h1 class="fw-light display-5">Diseño inspirado en Liu Bai</h1>
+      <p class="lead text-muted">Espacio, silencio visual y énfasis limpio.</p>
+      <a href="#about" class="btn btn-custom mt-3">Conoce más</a>
+    </div>
+  </div>
+</section>
+
+<!-- About Me -->
+<section id="about" class="section-space">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 class="fw-light mb-4">Sobre mí</h2>
+        <p class="text-muted">
+          Soy un diseñador visual que cree en el poder del vacío. Mi trabajo explora la relación entre espacio, tipografía y contenido, siempre buscando la claridad sin ruido visual.
+        </p>
+        <p class="text-muted">
+          Inspirado en el estilo Liu Bai, cada proyecto es una oportunidad para reducir, simplificar y comunicar con precisión.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="https://via.placeholder.com/400x300" alt="Foto de perfil" class="img-fluid rounded-0 border">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Proyectos -->
+<section id="projects" class="section-space soft-gradient">
+  <div class="container">
+    <h2 class="fw-light text-center mb-5">Proyectos</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card-project">
+          <img src="https://via.placeholder.com/600x400" alt="Proyecto 1">
+          <div class="p-3">
+            <h5 class="fw-light">Proyecto Alpha</h5>
+            <p class="small text-muted">Diseño editorial minimalista para revista independiente.</p>
+            <a href="#" class="btn btn-sm btn-custom">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-project">
+          <img src="https://via.placeholder.com/600x400" alt="Proyecto 2">
+          <div class="p-3">
+            <h5 class="fw-light">Proyecto Beta</h5>
+            <p class="small text-muted">Identidad visual para marca de cosméticos.</p>
+            <a href="#" class="btn btn-sm btn-custom">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-project">
+          <img src="https://via.placeholder.com/600x400" alt="Proyecto 3">
+          <div class="p-3">
+            <h5 class="fw-light">Proyecto Gamma</h5>
+            <p class="small text-muted">Web para galería de arte contemporáneo.</p>
+            <a href="#" class="btn btn-sm btn-custom">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video (mejorado) -->
+<section id="video" class="section-space text-center">
+  <div class="container">
+    <h2 class="fw-light mb-4">Video de presentación</h2>
+    <button id="btnReproducir" class="btn btn-custom mb-4" data-bs-toggle="tooltip" title="Ver video currículum">
+      Reproducir vídeo
+    </button>
+
+    <!-- Modal de video -->
+    <div class="modal fade" id="modalVideo" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content border-0 rounded-0">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-light">Video currículum</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body p-0">
+            <video id="miVideo" class="w-100" controls poster="poster.jpg">
+              <source src="./video/tutorial.mp4" type="video/mp4">
+              <source src="./video/tutorial.webm" type="video/webm">
+              <source src="./video/tutorial.ogg" type="video/ogg">
+              Tu navegador no soporta vídeo HTML5.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-sm btn-custom" data-bs-toggle="collapse" data-bs-target="#infoExtra">
+      Más información
+    </button>
+    <div class="collapse mt-3" id="infoExtra">
+      <div class="card card-body text-muted mx-auto" style="max-width: 600px;">
+        Este vídeo tutorial enseña a cómo crear un video currículum, con la premisa de hacerlo en un futuro.
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Contacto -->
+<section id="contact" class="section-space">
+  <div class="container">
+    <h2 class="fw-light text-center mb-5">Contacto</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form id="contactForm" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" required>
+            <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" required>
+            <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+            <div class="invalid-feedback">Por favor ingresa un mensaje.</div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-custom" type="submit">Enviar mensaje</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 text-center text-muted small">
+  © 2025 Liu Bai Portafolio. Diseñado con silencio visual.
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-scrolled');
+    } else {
+      navbar.classList.remove('navbar-scrolled');
+    }
+  });
+
+  // Tooltip
+  const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  tooltipTriggerList.map(t => new bootstrap.Tooltip(t));
+
+  // Video modal
+  document.getElementById('btnReproducir').addEventListener('click', () => {
+    const modal = new bootstrap.Modal(document.getElementById('modalVideo'));
+    modal.show();
+    document.getElementById('miVideo').play();
+  });
+
+  // Form validation
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', e => {
+    if (!form.checkValidity()) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    form.classList.add('was-validated');
+  });
+</script>
+</body>
+</html>

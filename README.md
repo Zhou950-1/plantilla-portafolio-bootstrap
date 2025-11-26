@@ -39,9 +39,9 @@ Este proyecto demuestra la selección de formatos de vídeo y configuraciones de
 
 ## Estructura del Proyecto
 
-portafolio
-├── index.html
-└── video
-    ├── tutorial.mp4
-    ├── tutorial.ogg
-    └── tutorial.webm
+> portafolio
+> ├── index.html
+> └── video
+>     ├── tutorial.mp4
+>     ├── tutorial.ogg
+>     └── tutorial.webm
